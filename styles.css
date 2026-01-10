@@ -1,0 +1,16 @@
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;font-size:16px;line-height:1.4;color:#111;background:#f7f7f7}
+.container{max-width:960px;margin:0 auto;padding:1rem}
+.site-header{background:#0366d6;color:#fff}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.site-header nav a{color:rgba(255,255,255,0.9);margin-left:1rem;text-decoration:none}
+#hero{padding:2rem 0}
+#demoBtn{background:#ff7a59;border:none;color:#fff;padding:.6rem 1rem;border-radius:6px;cursor:pointer}
+#demoBtn:hover{opacity:.9}
+.site-footer{padding:1rem 0;text-align:center;color:#666}
+@media (max-width:600px){
+  .site-header .container{flex-direction:column;align-items:flex-start}
+  .site-header nav{margin-top:.5rem}
+}
