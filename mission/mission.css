@@ -8,7 +8,7 @@ body {
     margin: 0 auto;
     padding: 50px;
 }
-h3 {
+h2 {
     color: #035f9c;
     font-size: 0.9em;
     margin: auto;
@@ -21,8 +21,20 @@ hr {
 h1 {
     text-align: center;
 }
+h1 {
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+p, li {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
 img {
-    width: 25%;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 50px auto;
 }
