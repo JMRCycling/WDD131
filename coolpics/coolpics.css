@@ -76,7 +76,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-section {
+div {
     padding: 0;
     margin: 0;
     display: grid;
@@ -84,7 +84,7 @@ section {
     gap: 10px;
 }
 
-section img {
+div img {
     margin: 10px auto ;
     width: 200px;
     height: 200px;
@@ -97,7 +97,7 @@ section img {
 
 
 @media screen and (min-width: 700px) {
-    section {
+    div {
         grid-template-columns: 1fr 1fr;
     }
     
@@ -112,7 +112,7 @@ section img {
 
 
 @media screen and (min-width: 1000px) {
-    section {
+    div {
         grid-template-columns: 1fr 1fr 1fr;
     }
     
