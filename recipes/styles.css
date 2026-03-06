@@ -57,24 +57,28 @@ hr {
 }
 .recipe-list {
     display: flex;
+    flex-direction: column;
+    gap: 1em;
     border: 2px solid #000;
     border-radius: 5px;
-    /* justify-content: center; */
+    width: 75%;
+    margin-inline: auto;
 }
 .recipe-list img {
     width: 100%;
-    height: auto;
     object-fit: cover;
+    transition: width 0.3s ease, height 0.3s ease;
 }
 .recipe {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1em;
     padding: 1em;
 }
 .description {
     display: flex;
     flex-direction: column;
+    flex: 1 1 200px;
     align-items: flex-start;
 }
 .tag {
@@ -88,12 +92,10 @@ hr {
 }
 
 @media (min-width: 550px) {
-    .recipe {
-        flex-direction: row;
-    }
     .recipe-list img {
         width: 200px;
         height: 200px;
+        flex-shrink: 0;
     }
     .description p {
         display: block;
