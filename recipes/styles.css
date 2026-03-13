@@ -90,6 +90,13 @@ hr {
     display: none;
     font-size: 0.9em;
 }
+.show-all-button {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
 
 @media (min-width: 550px) {
     .recipe-list img {
