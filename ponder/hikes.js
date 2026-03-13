@@ -82,7 +82,7 @@ function search() {
 
     let filteredHikes = hikes.filter(function(hike) {
         return hike.name.toLowerCase().includes(hikeQuery.toLowerCase()) || 
-        hike.description.includes(hikeQuery.toLowerCase()) || 
+        hike.description.toLowerCase().includes(hikeQuery.toLowerCase()) || 
         hike.tags.find(tag => tag.toLowerCase().includes(hikeQuery.toLowerCase())
         );
     });
