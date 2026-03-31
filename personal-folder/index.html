@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mason Tuft | Software Developer</title>
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">Mason Tuft</a>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html#contact">Contact Me</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Software Developer<br>— Mason Tuft</h1>
+      <p>Building apps that make a difference. Currently studying at BYU-Idaho while shipping production software used by real customers.</p>
+      <a href="projects.html" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/code-snippet.jpg" alt="Code Snippet">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I'm a software developer with a passion for creating applications that make a difference. Currently studying at BYU-Idaho while building production applications used by real customers.</p>
+        <p>My flagship project, KOR (Keep On Rolling), is a bike maintenance tracking app available on both iOS and Android. It integrates with Strava to automatically track component wear and notify cyclists when maintenance is needed.</p>
+        <p>When I'm not coding, you'll find me mountain biking, exploring new trails, or working on side projects that solve problems I encounter in daily life.</p>
+      </div>
+      <div class="code-block" id="masonObject">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <div class="skills-band">
+    <div class="skills-inner">
+      <h2>Skills</h2>
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Project -->
+  <section class="featured">
+    <h2>Featured Project</h2>
+    <div class="kor-band">
+      <div class="kor-visuals">
+        <img src="images/kor-logo.png" alt="KOR app logo" class="kor-logo">
+        <img src="images/kor-mobile.png" alt="KOR mobile app screenshots" class="kor-mobile">
+      </div>
+      <div class="kor-info">
+        <h3>KOR — Keep On Rolling</h3>
+        <p>A bike maintenance tracking app for iOS and Android. KOR integrates with Strava to automatically track component wear based on your rides and notify you when maintenance is due — so you can focus on the trail, not the spreadsheet.</p>
+        <div class="kor-buttons">
+          <a href="https://apps.apple.com/us/app/kor-keep-on-rolling/id1599601993" class="btn">Apple App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.robtuft.newKOR" class="btn">Google Play Store</a>
+          <a href="https://jmrcycling.com" class="btn btn-outline">Website</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mason Tuft</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

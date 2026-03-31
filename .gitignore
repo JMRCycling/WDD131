@@ -3,3 +3,5 @@ node_modules/
 .vscode/
 /dist
 /.env
+.claude/launch.json
+.clone/worktrees/sleepy-jang/personal-folder/projects.html

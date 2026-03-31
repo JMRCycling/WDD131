@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mason Tuft</title>
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">Mason Tuft</a>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="projects.html#contact">Contact Me</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+  </header>
+
+  <!-- Projects -->
+  <section class="projects-page">
+    <h2>Projects</h2>
+    <div class="filter-bar" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="All">All</button>
+      <button class="filter-btn" data-filter="Mobile">Mobile</button>
+      <button class="filter-btn" data-filter="Web App">Web App</button>
+      <button class="filter-btn" data-filter="Web Design">Web Design</button>
+    </div>
+    <p class="filter-count" id="filterCount"></p>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Rendered by JS -->
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="contact-text">
+      <h2>Contact Me</h2>
+      <p>Interested in working together? Whether you're a recruiter, hiring manager, or small business owner looking for a developer — I'd love to hear from you.</p>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <input type="text" id="nameInput" name="name" placeholder="Name" required>
+      <span class="field-error" id="nameError"></span>
+      <input type="email" id="emailInput" name="email" placeholder="Email" required>
+      <span class="field-error" id="emailError"></span>
+      <textarea id="messageInput" name="message" placeholder="Message" rows="5" required></textarea>
+      <span class="field-error" id="messageError"></span>
+      <button type="submit" class="btn">Send</button>
+      <p class="form-success" id="formSuccess">Thanks! I'll get back to you soon.</p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mason Tuft</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/projects.js"></script>
+</body>
+</html>
