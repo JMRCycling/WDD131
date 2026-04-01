@@ -4,7 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mason Tuft | Software Developer</title>
-<link rel="stylesheet" href="styles/styles.css">
+  <meta name="description" content="Mason Tuft is a software developer studying at BYU-Idaho, building production apps that make a difference.">
+  <meta name="author" content="Mason Tuft">
+  <meta property="og:title" content="Mason Tuft | Software Developer">
+  <meta property="og:description" content="Mason Tuft is a software developer studying at BYU-Idaho, building production apps that make a difference.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jmrcycling.github.io/personal-folder/">
+  <meta property="og:image" content="https://jmrcycling.github.io/personal-folder/images/code-snippet.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mason Tuft | Software Developer">
+  <meta name="twitter:description" content="Mason Tuft is a software developer studying at BYU-Idaho, building production apps that make a difference.">
+  <meta name="twitter:image" content="https://jmrcycling.github.io/personal-folder/images/code-snippet.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/code-snippet.jpg">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
@@ -26,7 +41,7 @@
       <a href="projects.html" class="btn">View My Work</a>
     </div>
     <div class="hero-image">
-      <img src="images/code-snippet.jpg" alt="Code Snippet">
+      <img src="images/code-snippet.jpg" alt="Code Snippet" fetchpriority="high">
     </div>
   </section>
 
@@ -60,8 +75,8 @@
     <h2>Featured Project</h2>
     <div class="kor-band">
       <div class="kor-visuals">
-        <img src="images/kor-logo.png" alt="KOR app logo" class="kor-logo">
-        <img src="images/kor-mobile.png" alt="KOR mobile app screenshots" class="kor-mobile">
+        <img src="images/kor-logo.png" alt="KOR app logo" class="kor-logo" loading="lazy">
+        <img src="images/kor-mobile.png" alt="KOR mobile app screenshots" class="kor-mobile" loading="lazy">
       </div>
       <div class="kor-info">
         <h3>KOR — Keep On Rolling</h3>
@@ -79,6 +94,6 @@
     <p>&copy; <span id="year"></span> Mason Tuft</p>
   </footer>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/main.js" defer></script>
 </body>
 </html>

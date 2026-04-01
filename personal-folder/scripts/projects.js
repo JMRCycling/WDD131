@@ -35,7 +35,7 @@ function createProjectCard(project) {
   return `
     <div class="project-card">
       <div class="card-image">
-        <img src="${project.image}" alt="${project.title}">
+        <img src="${project.image}" alt="${project.title}" loading="lazy">
         <div class="card-overlay">
           <p>${project.description}</p>
           <a href="${project.link}" class="btn btn-sm">Learn More</a>
