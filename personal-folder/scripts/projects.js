@@ -107,7 +107,7 @@ function validateField(value, fieldName) {
 
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name    = document.getElementById('nameInput');
@@ -131,11 +131,39 @@ if (contactForm) {
     messageErr.textContent = errors.message;
 
     const hasErrors = Object.values(errors).some(err => err !== '');
+    if (hasErrors) return;
 
-    if (!hasErrors) {
-      successMsg.style.display = 'block';
-      contactForm.reset();
-      setTimeout(() => { successMsg.style.display = 'none'; }, 4000);
+    // Submit to Formspree via Ajax
+    const submitBtn = contactForm.querySelector('[type="submit"]');
+    submitBtn.disabled = true;
+    console.log('[Contact Form] Submitting to Formspree...');
+
+    try {
+      const response = await fetch('https://formspree.io/f/xjgpokvr', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(contactForm)
+      });
+
+      console.log('[Contact Form] Response status:', response.status);
+
+      if (response.ok) {
+        console.log('[Contact Form] Submission successful.');
+        successMsg.style.display = 'block';
+        contactForm.reset();
+        setTimeout(() => { successMsg.style.display = 'none'; }, 4000);
+      } else {
+        const data = await response.json();
+        console.warn('[Contact Form] Formspree error:', data);
+        const msg = data.errors ? data.errors.map(err => err.message).join(' ') : 'Submission failed. Please try again.';
+        nameErr.textContent = msg;
+      }
+    } catch (err) {
+      console.error('[Contact Form] Network error:', err);
+      nameErr.textContent = 'Something went wrong. Please check your connection and try again.';
+    } finally {
+      console.log('[Contact Form] Done.');
+      submitBtn.disabled = false;
     }
   });
 }
