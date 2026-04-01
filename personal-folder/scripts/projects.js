@@ -2,31 +2,31 @@
 const projects = [
   {
     title: 'KOR — Keep On Rolling',
-    description: 'A bike maintenance tracking app for iOS and Android. Integrates with Strava to automatically track component wear and notify cyclists when maintenance is due.',
-    image: 'images/kor-mobile.png',
+    description: 'A bike maintenance tracking app for iOS and Android. Integrates with Strava to automatically track component wear and notify cyclists when maintenance is due. (Private repo, contact for access)',
+    image: 'images/kor-mobile.jpg',
     tags: ['Mobile', 'iOS', 'Android'],
-    link: '#'
+    link: 'https://github.com/jmrcycling/KOR-Mobile'
   },
   {
     title: 'KOR Website',
     description: 'Marketing and documentation site for the KOR app, built to onboard new users and showcase features.',
-    image: 'images/kor-website.png',
+    image: 'images/kor-website.jpg',
     tags: ['Web Design', 'Web App'],
-    link: '#'
+    link: 'https://github.com/jmrcycling/KOR-Website'
   },
   {
     title: 'Route Optimizer',
-    description: 'A tool for optimizing delivery and travel routes for maximum efficiency, reducing time and fuel costs.',
-    image: 'images/route-optimizer.png',
+    description: 'A tool for optimizing delivery and travel routes for maximum efficiency, reducing time and fuel costs.(Private repo, contact for access)',
+    image: 'images/route-optimizer.jpg',
     tags: ['Web App'],
-    link: '#'
+    link: 'https://github.com/robtuft/TSB'
   },
   {
     title: 'Landscaping Site',
     description: 'A professional website built for a local landscaping business to showcase services and generate leads.',
     image: 'images/landscaping.jpg',
     tags: ['Web Design'],
-    link: '#'
+    link: 'https://github.com/jmrcycling/StaufferLandscaping'
   }
 ];
 
